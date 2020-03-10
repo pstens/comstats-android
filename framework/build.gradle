@@ -1,0 +1,14 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation "com.squareup.retrofit2:converter-moshi:2.7.1"
+    implementation project(':usecases')
+    implementation project(':data')
+    implementation project(':domain')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
